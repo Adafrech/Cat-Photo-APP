@@ -1,0 +1,98 @@
+<!--Esto es usado para comentar los textos-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <title> Fotos de gatos</title>
+    </head>
+    <body>
+<h1>Pagina #1 / Fotos de gatos</h1><!--Para abrir elementos de tageo se usa <h1> y para cerrarlos </h1> -->
+    <main><!--El main debe estar abierto despues del h1 y despues del p-->
+<!-- A su vez, los elementos de encabezado tienen su importancia, van del menor al mayor.
+por ejemplo para titulos usariamos h1, para subtitulos h2.-->
+    <section><!-- Servira a futuro para separar las fotos de gatos.-->
+    <h2>Fotos de Gatos</h2>
+<!--La p significa para crear parrafos comunes que conocemos-->
+    <p>¿Te estan gustando las fotos de los gatitos? <a target ="_blank" href = 'https://freecatphotoapp.com'>Click aca para ver mas fotos</a></p><!-- Anidamiento para textos enlazados-->
+    <a href = "https://freecatphotoapp.com" ><img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt = "Un lindo gato naranja acostado boca arriba"></a> <!--ANIDACION DE IMAGEN A UN ENLACE.-->
+    </section>
+    
+    <section>
+        <h2>Listas De Gatos</h2>
+            <h3>Cosas que le gustan a los michis</h3>
+
+            <ul>
+                    <li>
+                    Leche
+                    </li>
+                    <li>
+                    Queso
+                    </li>
+                    <li>
+                    Menta de gato 
+                    </li>
+                    <li>
+                    Lasagna
+                    </li>
+                    <li>
+                    Puntos Laser
+                    </li>
+                </li>
+
+            </ul><!--Lista no ordenada-->
+            <figure>
+                <img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt = "A slice of lasagna on a plate">
+            <figcaption>
+                Los gatos aman la lasagna <em>aman</em>
+            </figcaption>
+        </figure>
+        <h3>
+            Top 3 Cosas que odian los gatos 
+        </h3>
+        <ol>
+            <li>Tratamiento de pulgas</li>
+            <li>Rayos</li>
+            <li>Otros gatos</li>
+        </ol><!--Lista ordenada-->
+        <figure>
+            <img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt = "Cinco gatos mirando a su alrededor">
+            <figcaption>Los gatos <strong>odian</strong> a otros gatos</figcaption><!--Strong sirve para hacer importante una parte del subtexto-->
+        </figure>
+    </section>
+
+    <section>
+        <h2>Formas de gatos</h2>
+        <form action = "https://freecatphotoapp.com/submit-cat-photo"></form>
+        <fieldset>
+            <legend>¿El gato esta en el interior o exterior?</legend>
+        <label><input type = "radio" id="indoor" name ="indoor-outdoor" value ="indoor" checked=""> Interior</label>
+        <label><input id="outdoor" type="radio" name = "indoor-outdoor" value ="outdoor"> Exterior</label>
+        </fieldset>
+        <fieldset> 
+            <legend>
+                ¿Cual es la personalidad de su gato?
+            </legend>
+            <input id="amoroso" type="checkbox" name="personalidad" value="amoroso" checked=""> 
+
+            <label for="amoroso"> Amoroso</label>
+
+            <input id="perezoso" type="checkbox" name="personalidad" value="perezoso">
+
+            <label for="perezoso"> Perezoso</label>
+
+            <input id="Energico" type="checkbox" name="personalidad" value="energico">
+
+            <label for="energico"> Energico</label>
+        </fieldset>
+        <input type="text" name="cat photo url" placeholder = "Url" required><!--Input sirve como metodo de entrada-->
+        <button type = "Enviar">Enviar</button> <!--Sirve para crear botones y el type para decir el tipo para no dejarlo default, porque sino causa error-->
+    </section>  
+</main> 
+<footer>
+    <p>
+        No Copyright - <a href = https://www.freecodecamp.org>freeCodeCamp.org</a>
+    </p>
+</footer>
+</body>
+</html>
